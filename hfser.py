@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import hfser
 import sys
+
 try:
     image_file = sys.argv[1]
 except:
@@ -28,6 +29,7 @@ def switch_driver():
         exit(1)
     print(f"Switching {image_file} to a {switch_to['driver']}")
     hfser.switch_driver(image_file, switch_to)
+
 
 def check_image():
     try:
