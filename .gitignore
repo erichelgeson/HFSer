@@ -2,3 +2,4 @@
 *.hda
 .idea
 hfdisk/
+__pycache__/
